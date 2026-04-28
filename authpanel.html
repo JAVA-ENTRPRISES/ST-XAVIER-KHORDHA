@@ -1,0 +1,70 @@
+<!-- Auth Panel -->
+<div class="offcanvas offcanvas-end user-panel" tabindex="-1" id="userPanel" aria-labelledby="userPanelLabel" data-auth-panel="true">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="userPanelLabel">Sign In / Register</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="auth-toggle btn-group w-100 mb-4" role="group" aria-label="Authentication forms">
+            <button type="button" class="btn btn-primary active" data-target="login">Login</button>
+            <button type="button" class="btn btn-outline-primary" data-target="register">Register</button>
+        </div>
+        <div class="auth-forms">
+            <div class="auth-form" data-form="login">
+                <form>
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                    <a href="#" class="d-inline-block mt-3 text-decoration-none">Reset password</a>
+                </form>
+            </div>
+            <div class="auth-form d-none" data-form="register">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" placeholder="Enter full name" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="name@example.com" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="registerPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="registerPhone" placeholder="+91 9876543210" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="registerClass" class="form-label">Class / Grade</label>
+                            <select class="form-select" id="registerClass" required>
+                                <option value="" disabled>Select</option>
+                                <option>Nursery</option>
+                                <option>Primary</option>
+                                <option>Middle School</option>
+                                <option>High School</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Create password" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm password" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="registerAddress" class="form-label">Address</label>
+                            <textarea class="form-control" id="registerAddress" rows="3" placeholder="Your address" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mt-3">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
